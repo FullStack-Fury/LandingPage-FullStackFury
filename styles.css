@@ -125,11 +125,11 @@ header .logo {
 }
 
 /* ---------- Acerca de Section Styles ---------- */
-.acerca_de {
+.about-us {
     font-family: "Merriweather", serif;
 }
 
-.acerca_de .container {
+.about-us .container {
     padding: 90px 15% 120px;
     background-color: #fad6a3;
     display: flex;
@@ -138,18 +138,18 @@ header .logo {
     align-items: center;
 }
 
-.acerca_de .container .main-txt {
+.about-us .container .main-txt {
     width: 100%;
     text-align: center;
     margin-bottom: 20px;
     font-size: 35px;
 }
 
-.acerca_de .container h2 {
+.about-us .container h2 {
     color: #A9885A;
 }
 
-.acerca_de .container .content {
+.about-us .container .content {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -158,17 +158,17 @@ header .logo {
     gap: 20px;
 }
 
-.acerca_de .container .text-content {
+.about-us .container .text-content {
     flex: 1;
 }
 
-.acerca_de .container p {
+.about-us .container p {
     margin-right: 150px;
     font-size: 25px;
     text-align: justify;
 }
 
-.acerca_de .container img {
+.about-us .container img {
     width: 400px;
     height: auto;
     flex-shrink: 0;
@@ -176,19 +176,19 @@ header .logo {
 
 
 /*------- Team section -------------*/
-.equipo {
+.team {
     font-family: "Montserrat";
     padding: 1em;
 }
 
-.equipo .row {
+.team .row {
     display: flex;
     flex-wrap: wrap;
     padding: 2em 1em;
     text-align: center;
 }
 
-.equipo .row h1 {
+.team .row h1 {
     font-family: "Merriweather", serif;
     width: 100%;
     text-align: center;
@@ -196,13 +196,13 @@ header .logo {
     font-size: 3.5em;
 }
 
-.equipo .row .column {
+.team .row .column {
     flex: 0 0 33.33%;
     max-width: 20%;
     padding: 0 1em;
 }
 
-.equipo .row .card {
+.team .row .card {
     box-shadow: 0 0 2.2em rgba(25, 0, 58, 0.15);
     padding: 3.5em 1em;
     border-radius: 0.6em;
@@ -211,7 +211,7 @@ header .logo {
     margin-bottom: 15px;
 }
 
-.equipo .row .card .img {
+.team .row .card .img {
     width: 8em;
     height: 8em;
     background-color: #303030;
@@ -220,23 +220,23 @@ header .logo {
     margin: 0 auto 2em auto;
 }
 
-.equipo .row .card img {
+.team .row .card img {
     width: 100%;
     border-radius: 50%;
 }
 
-.equipo .row .card h3 {
+.team .row .card h3 {
     font-weight: 500;
 }
 
-.equipo .row .card p {
+.team .row .card p {
     font-weight: 300;
     text-transform: uppercase;
     margin: 0.5em 0 2em 0;
     letter-spacing: 2px;
 }
 
-.equipo .row .card .icons {
+.team .row .card .icons {
     width: 50%;
     min-width: 180px;
     margin: auto;
@@ -244,12 +244,12 @@ header .logo {
     justify-content: space-between;
 }
 
-.equipo .row .card a {
+.team .row .card a {
     color: inherit;
     font-size: 1.4em;
 }
 
-.equipo .row .card:hover {
+.team .row .card:hover {
     background: #fad6a3;
     transition: all 0.3s;
     transform: translateY(-8px);
