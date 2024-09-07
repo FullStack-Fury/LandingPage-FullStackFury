@@ -119,3 +119,52 @@ header .logo {
     transition: all 0.5s ease;
     transform: translateY(-5px);
 }
+
+.acerca_de {
+    font-family: "Merriweather", serif;
+}
+
+.acerca_de .container {
+    padding: 90px 15% 120px;
+    background-color: #fad6a3;
+    display: flex;
+    flex-direction: column;
+    /* Title and content stack vertically */
+    align-items: center;
+}
+
+.acerca_de .container .main-txt {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 35px;
+}
+
+.acerca_de .container h2 {
+    color: #A9885A;
+}
+
+.acerca_de .container .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    gap: 20px;
+}
+
+.acerca_de .container .text-content {
+    flex: 1;
+}
+
+.acerca_de .container p {
+    margin-right: 150px;
+    font-size: 25px;
+    text-align: justify;
+}
+
+.acerca_de .container img {
+    width: 400px;
+    height: auto;
+    flex-shrink: 0;
+}
