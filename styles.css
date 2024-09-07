@@ -168,3 +168,72 @@ header .logo {
     height: auto;
     flex-shrink: 0;
 }
+
+.equipo {
+    font-family: "Montserrat";
+    padding: 1em;
+  }
+  .equipo .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2em 1em;
+    text-align: center;
+  }
+  .equipo .row h1 {
+    font-family: "Merriweather", serif;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    font-size: 3.5em;
+  }
+  .equipo .row .column {
+    flex: 0 0 33.33%;
+    max-width: 20%;
+    padding: 0 1em;
+  }
+  .equipo .row .card {
+    box-shadow: 0 0 2.2em rgba(25, 0, 58, 0.15);
+    padding: 3.5em 1em;
+    border-radius: 0.6em;
+    color: #303030;
+    cursor: pointer;
+    margin-bottom: 15px;
+  }
+  .equipo .row .card .img {
+    width: 8em;
+    height: 8em;
+    background-color: #303030;
+    padding: 0.5em;
+    border-radius: 50%;
+    margin: 0 auto 2em auto;
+  }
+  .equipo .row .card img {
+    width: 100%;
+    border-radius: 50%;
+  }
+  .equipo .row .card h3 {
+    font-weight: 500;
+  }
+  .equipo .row .card p {
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 0.5em 0 2em 0;
+    letter-spacing: 2px;
+  }
+  .equipo .row .card .icons {
+    width: 50%;
+    min-width: 180px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  .equipo .row .card a {
+    color: inherit;
+    font-size: 1.4em;
+  }
+  .equipo .row .card:hover {
+    background: #fad6a3;
+    transition: all 0.3s;
+    transform: translateY(-8px);
+    box-shadow: 0 0 2.2em rgba(17, 17, 17, 0.733);
+  }
