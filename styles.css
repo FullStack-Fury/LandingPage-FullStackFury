@@ -1,73 +1,121 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-  list-style: none;
-  box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 :root {
-  --bg-color: rgb(201, 196, 196);
-  --bg-color2: #e2c872;
-  --text-color: #747774;
+    --bg-color: rgb(201, 196, 196);
+    --bg-color2: #e2c872;
+    --text-color: #747774;
 }
 
 /* Estilos generales */
 body {
-  margin: 0;
-  padding: 0;
-  background-color: var(--background-color);
-  color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
 
 header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: 80px;
-  background-color: rgb(255, 255, 255);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 100px;
-  transition: 0.6s;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+    transition: 0.6s;
 }
+
 header .logo {
-  display: flex;
-  height: 80px;
+    display: flex;
+    height: 80px;
 }
 
 .navbar ul {
-  font-family: "Montserrat";
-  display: flex;
+    font-family: "Montserrat";
+    display: flex;
 }
+
 .navbar ul li a {
-  display: block;
-  color: var(--text-color);
-  font-size: 20px;
-  padding: 10px 25px;
-  border-radius: 50px;
-  transition: 0.2s;
-  margin: 0 5px;
-  position: relative;
+    display: block;
+    color: var(--text-color);
+    font-size: 20px;
+    padding: 10px 25px;
+    border-radius: 50px;
+    transition: 0.2s;
+    margin: 0 5px;
+    position: relative;
 }
+
 .navbar ul li a::before {
-  content: "";
-  position: absolute;
-  bottom: -10px;
-  left: 0;
-  width: 0;
-  height: 3px;
-  background-color: #cea66f;
-  transition: all 0.5s;
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: #cea66f;
+    transition: all 0.5s;
 }
+
 .navbar ul li a:hover::before {
-  width: 100%;
+    width: 100%;
+}
+
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 150px auto;
+    width: 70%;
+    font-size: 30px;
+}
+
+.hero img {
+    float: left;
+    margin-right: 50px;
+    width: 40vw;
+}
+
+.hero .text {
+    font-family: "Merriweather", serif;
+    font-size: 25px;
+}
+
+.hero .text h1 {
+    color: #b89360;
+}
+
+.hero .text button {
+    font-family: "Merriweather", serif;
+    background: none;
+    width: 150px;
+    height: 5vh;
+    margin-top: 20px;
+    transition: all 0.5s ease;
+}
+
+.hero .text button:hover {
+    background: #303030;
+    color: #fff;
+    box-shadow: 0px 0px 50px #cea66f, 0px 0px 100px #cea66f;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    transform: translateY(-5px);
 }
