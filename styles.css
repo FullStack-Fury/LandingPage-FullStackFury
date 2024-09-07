@@ -236,6 +236,87 @@ header .logo {
     color: #cea66f;
 }
 
+
+/* ---------- Footer Styles ---------- */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+.footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-col {
+    flex: 1 1 calc(25% - 20px);
+    margin: 10px;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #cea66f;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    color: #bbb;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-col ul li a:hover {
+    color: #fff;
+}
+
+.footer .social-links {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.footer .social-links a {
+    color: #bbb;
+    font-size: 20px;
+    margin-right: 15px;
+    transition: color 0.3s;
+}
+
+.footer .social-links a:hover {
+    color: #cea66f;
+}
+
+/* ---------- Media Queries for Responsiveness ---------- */
+@media (max-width: 768px) {
+    .footer-col {
+        flex: 1 1 100%;
+        text-align: center;
+    }
+
+    .footer .social-links {
+        justify-content: center;
+    }
+}
+
 /* ---------- Media Queries for Responsiveness ---------- */
 @media (max-width: 768px) {
     .navbar ul {
