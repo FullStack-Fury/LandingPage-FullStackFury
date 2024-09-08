@@ -4,7 +4,7 @@ const slider = document.querySelector('.testimonial-slider');
 let currentSlide = 0;
 const totalSlides = slider.children.length;
 const slideWidth = slider.children[0].offsetWidth;
-const visibleSlides = 2; // Adjust this to change how many are visible at once
+const visibleSlides = 5;
 
 nextButton.addEventListener('click', () => {
     if (currentSlide < totalSlides - visibleSlides) {
@@ -21,6 +21,6 @@ prevButton.addEventListener('click', () => {
 });
 
 function updateSlider() {
-    const offset = -(slideWidth + 20) * currentSlide; // 20 is the gap between cards
+    const offset = -(slideWidth + 20) * currentSlide;
     slider.style.transform = `translateX(${offset}px)`;
 }

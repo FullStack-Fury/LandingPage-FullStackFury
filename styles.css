@@ -497,8 +497,7 @@ header .navbar ul li a:hover::before {
 
 .testimonial-wrapper {
     overflow: hidden;
-    width: 100%;
-    max-width: 800px;
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -513,7 +512,7 @@ header .navbar ul li a:hover::before {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    width: calc(50% - 10px); /* Show two testimonials */
+    width: 1000px; /* Show two testimonials */
     box-sizing: border-box;
 }
 
@@ -531,9 +530,9 @@ header .navbar ul li a:hover::before {
 }
 
 .text p {
-    font-size: 1em;
+    font-size: 14px;
     color: #555;
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 .author {
