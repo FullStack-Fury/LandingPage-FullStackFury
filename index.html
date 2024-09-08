@@ -23,10 +23,10 @@
         <nav class="navbar">
             <ul>
                 <div class="logo">
-                    <img src="./assets/logo2-.png" alt="logo">
+                    <img src="./assets/logo2.png" alt="logo">
                 </div>
                 <li><a href="#" id="">Home</a></li>
-                <li><a href="#about-us">About us</a></li>
+                <li><a href="#acerca_de">About us</a></li>
                 <li><a href="">Subscriptions</a></li>
                 <li><a href="">Blog</a></li>
                 <li><a href="">Contact</a></li>
@@ -34,13 +34,13 @@
             </ul>
 
         </nav>
-
+        
         <label for="nav_check" class="hamburger">
             <div></div>
             <div></div>
             <div></div>
         </label>
-
+        
     </header>
     <!------------------------------->
 
@@ -62,14 +62,21 @@
     <!-----------about us  ---------->
 
     <section class="about-us" id="about-us">
-        <div class="inner-section">
-            <h1>About Us</h1>
-            <p class="text">GemZ is a software solution created by FullStackFury that transforms process and inventory management in
-                the jewelry industry. Designed for both workshops and jewelry stores, it offers complete control at
-                every stage of production, from the acquisition of materials to the delivery of the final product.
-            </p>
-            <div class="contact-us-abt">
-                <button>Contact Us</button>
+        <div class="container">
+            <div class="main-txt">
+                <h2>Acerca de GemZ</h2>
+            </div>
+            <div class="content">
+                <div class="text-content">
+                    <p>GemZ es una solución de software creada por FullStackFury que transforma la gestión de procesos e
+                        inventarios en la industria de la joyería. Diseñado tanto para talleres como para joyerías,
+                        ofrece
+                        control total en cada etapa de producción, desde la adquisición de materiales hasta la entrega
+                        del
+                        producto final.
+                    </p>
+                </div>
+                <img src="./assets/logo2.png" alt="Imagen acerca de GemZ">
             </div>
         </div>
     </section>
@@ -180,6 +187,77 @@
 
     <!-- --------------------------- -->
 
+    <!-- Start Contact Area -->
+    <div id="contact" class="contact-us">
+        <div class="container">
+            <div class="row">
+                <div class="main-title">
+                    <h2>Contact Us</h2>
+                    <p>If you need more information, please do not hesitate to contact us. 😊</p>
+                </div>
+                <div class="col contact-widget-wrapper">
+                    <div class="contact-widget-block">
+                        <h3 class="title">Call us</h3>
+                        <p>+51 0800 4900</p>
+                    </div>
+                    <div class="contact-widget-block">
+                        <h3 class="title">Email us</h3>
+                        <p>fullstack_fury@gmail.com</p>
+                        <p>gemZ@gmail.com</p>
+                    </div>
+                    <div class="contact-widget-block">
+                        <h3 class="title">Our Address</h3>
+                        <p>Av. Alameda San Marcos 11</p>
+                        <p>CHORRILLOS, PERÚ 15067</p>
+                    </div>
+                </div>
+                <div class="col contact-form">
+                    <h3 class="form-title">Leave a message here</h3>
+                    <form class="form" method="post" action="">
+                        <div class="form-group">
+                            <input name="name" type="text" placeholder="Name*" required="required">
+                        </div>
+                        <div class="form-group">
+                            <input name="email" type="email" placeholder="Email*" required="required">
+                        </div>
+                        <div class="form-group">
+                            <input name="subject" type="text" placeholder="Subject*" required="required">
+                        </div>
+                        <div class="form-group">
+                            <input name="phone" type="text" placeholder="Phone*" required="required">
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Message*" name="message" id="message-area" class="form-control"></textarea>
+                        </div>
+                        <div class="button">
+                            <button type="submit" class="btn">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------------------- -->
+
+    <div class="map-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="mapouter">
+                        <div class="gmap_canvas"><iframe id="gmap_canvas"
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15598.975676088388!2d-77.0075971!3d-12.19782!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105b9e0f449b10f%3A0x876705c16ffc17d7!2sUniversidad%20Peruana%20de%20Ciencias%20Aplicadas%20(UPC)!5e0!3m2!1ses!2spe!4v1725318806886!5m2!1ses!2spe">
+                        </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------------------- -->
+
+
     <!--------- Footer -------------->
 
     <footer class="footer">
@@ -193,8 +271,7 @@
                         <li><a href="#">Contacto</a></li>
                     </ul>
                 </div>
-                <div class="footer-col
-                ">
+                <div class="footer-col">
                     <h4>Recursos</h4>
                     <ul>
                         <li><a href="#">Blog</a></li>
@@ -202,8 +279,7 @@
                         <li><a href="#">Términos de servicio</a></li>
                     </ul>
                 </div>
-                <div class="footer-col
-                ">
+                <div class="footer-col">
                     <h4>Soporte</h4>
                     <ul>
                         <li><a href="#">FAQ</a></li>
@@ -211,8 +287,7 @@
                         <li><a href="#">Foro</a></li>
                     </ul>
                 </div>
-                <div class="footer-col
-                ">
+                <div class="footer-col">
                     <h4>Redes Sociales</h4>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -224,6 +299,8 @@
             </div>
         </div>
     </footer>
+
+        <!-- --------------------------- -->
 
 </body>
 

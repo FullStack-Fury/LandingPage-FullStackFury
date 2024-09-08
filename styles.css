@@ -35,14 +35,14 @@ header {
     top: 0;
     width: 100%;
     height: 10vh;
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 100px;
     transition: 0.6s;
-    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.3);
-
+    z-index: 1;
 }
 
 header .logo {
@@ -152,59 +152,53 @@ header .navbar ul li a:hover::before {
 }
 
 /* ---------- Acerca de Section Styles ---------- */
-
-.about-us{
-    font-family: "Montserrat";
-    background: url(./assets/proceso-2.jpeg) no-repeat left;
-    background-size: 45%;
-    background-color: #fefefe;
-    overflow: hidden;
-    padding: 100px 0;
+.about-us {
+    font-family: "Merriweather", serif;
 }
 
-.inner-section{
-    width: 55%;
-    float: right;
+.about-us .container {
+    padding: 90px 15% 120px;
     background-color: #fad6a3;
     padding: 140px;
     box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.3);
     border-radius: 15px;
 }
 
-.inner-section h1{
-    margin-bottom: 30px;
-    font-size: 50px;
-    font-weight: 900;
+.about-us .container .main-txt {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 35px;
 }
 
-.inner-section .text{
-    font-size: 20px;
-    color: var(--text-color);
-    line-height: 30px;
+.about-us .container h2 {
+    color: #A9885A;
+}
+
+.about-us .container .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    gap: 20px;
+}
+
+.about-us .container .text-content {
+    flex: 1;
+}
+
+.about-us .container p {
+    margin-right: 150px;
+    font-size: 25px;
     text-align: justify;
     margin-bottom: 40px;
 }
 
-.contact-us-abt button{
-    font-family: "Montserrat", serif;
-    background: #303030;
-    color: #fff;
-    border: none;
-    width: 150px;
-    height: 5vh;
-    margin-top: 20px;
-    transition: all 0.5s ease;
-    border-radius: 20px;
-}
-
-.contact-us-abt button:hover{
-    background: #fff;
-    color: #303030;
-    box-shadow: 0px 0px 50px #cea66f, 0px 0px 100px #cea66f;
-    cursor: pointer;
-    transition: all 0.5s ease;
-    border: 1px solid #212526;
-    scale: 110%;
+.about-us .container img {
+    width: 400px;
+    height: auto;
+    flex-shrink: 0;
 }
 
 /* ---------- Team Section Styles ---------- */
@@ -338,9 +332,178 @@ header .navbar ul li a:hover::before {
     color: #cea66f;
 }
 
-@media screen and (max-width: 1200px){
-    .inner-section{
-        padding: 80px;
+/* ---------- Contact Area Styles ---------- */
+.contact-us  {
+    font-family: "Poppins", sans-serif;
+    background-color: #fff;
+    padding: 70px 0;
+    text-align: center;
+    color: #2c3e50;
+}
+
+.contact-us .container {
+    
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.contact-us .main-title h2 {
+    font-size: 2.7em;
+    color: #34495e;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+}
+
+.contact-us .main-title h2:hover {
+    color: #776f67;
+}
+
+.contact-us .main-title h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #e67e22;
+    margin: 10px auto 0;
+    transition: width 0.3s ease;
+}
+
+.contact-us .main-title h2:hover::after {
+    width: 90px;
+}
+
+.contact-us .main-title p {
+    font-size: 1.2em;
+    color: #7f8c8d;
+    margin-bottom: 40px;
+}
+
+.contact-widget-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.contact-widget-block {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    flex: 1 1 calc(33.333% - 40px);
+    max-width: calc(33.333% - 40px);
+    box-sizing: border-box;
+    margin: 20px 0;
+    transition: all 0.3s ease;
+}
+
+.contact-widget-block:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+.contact-widget-block h3.title {
+    font-size: 1.6em;
+    color: #34495e;
+    margin-bottom: 15px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.contact-widget-block h3.title::after {
+    content: '';
+    display: block;
+    width: 35px;
+    height: 3px;
+    background-color: #e67e22;
+    margin: 8px 0 0;
+}
+
+.contact-widget-block p {
+    font-size: 1.1em;
+    color: #7f8c8d;
+    margin: 8px 0;
+}
+
+/* ---------- Button Styles ---------- */
+.contact-form .btn {
+    background-color: #e67e22;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1em;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+}
+
+.contact-form .btn:hover {
+    background-color: #d35400;
+}
+
+/* ---------- Form Input Styles ---------- */
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    transition: border-color 0.3s ease;
+    font-size: 1em;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #e67e22;
+    outline: none;
+}
+
+/*------------- section google maps -----------------*/
+
+#gmap_canvas {
+    display: relative;
+    width: 100%;
+    height: 500px;
+    border: 1px solid #000;
+}
+
+@media (max-width: 1024px) {
+    .contact-widget-block {
+        flex: 1 1 48%;
+        max-width: 48%;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-widget-block {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    .contact-us .main-title h2 {
+        font-size: 2.2em;
+    }
+
+    .contact-widget-block {
+        margin: 15px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-form input,
+    .contact-form textarea {
+        padding: 10px;
+    }
+
+    .contact-us .main-title h2 {
+        font-size: 1.8em;
     }
 }
 
@@ -384,38 +547,6 @@ header .navbar ul li a:hover::before {
     header #nav_check:checked~nav {
         left: 0;
     }
-
-    .about-us{
-
-        background: none;
-        padding: 100px 40px;
-    }
-    
-    .inner-section{
-        width: 100%;
-    }
-}
-
-@media screen and (max-width:600px){
-    .about-us{
-        padding: 0;
-    }
-
-    .inner-section{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 60px;
-    }
-
-    .skills button{
-        font-size: 19px;
-        padding: 5px;
-        width: 16px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
 }
 
 /* ---------- Media Queries for Responsiveness ---------- */
@@ -431,6 +562,17 @@ header .navbar ul li a:hover::before {
 }
 
 /* ---------- Media Queries for Responsiveness ---------- */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .navbar ul li {
+        width: 100%;
+        text-align: center;
+    }
+}
 
 @media (max-width: 768px) {
     .navbar ul {
@@ -456,22 +598,20 @@ header .navbar ul li a:hover::before {
 
     .hero img {
         width: 80vw;
-        margin: 80px 0 20px 0;
+        margin: 0 0 20px 0;
     }
 
     .hero .text {
-        margin-top: 20px;
         font-size: 20px;
         text-align: center;
     }
 
-    .hero .text p{
-        margin-top: 20px;
+    .hero .text button {
+        width: 100px;
+        height: 40px;
     }
 
-    .hero .text button {
-        width: 180px;
-        height: 60px;
+    .acerca_de .container {
+        padding: 50px 10%;
     }
-    
-} 
+}
