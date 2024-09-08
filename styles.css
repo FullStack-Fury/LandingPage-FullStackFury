@@ -153,52 +153,57 @@ header .navbar ul li a:hover::before {
 
 /* ---------- Acerca de Section Styles ---------- */
 .about-us {
-    font-family: "Merriweather", serif;
+    font-family: "Montserrat";
+    background: url(./assets/proceso-2.jpeg) no-repeat left;
+    background-size: 45%;
+    background-color: #fefefe;
+    overflow: hidden;
+    padding: 100px 0;
 }
 
-.about-us .container {
-    padding: 90px 15% 120px;
+.inner-section {
+    width: 55%;
+    float: right;
     background-color: #fad6a3;
     padding: 140px;
     box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.3);
     border-radius: 15px;
 }
 
-.about-us .container .main-txt {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 35px;
+.inner-section h1 {
+    margin-bottom: 30px;
+    font-size: 50px;
+    font-weight: 900;
 }
 
-.about-us .container h2 {
-    color: #A9885A;
-}
-
-.about-us .container .content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    max-width: 1200px;
-    gap: 20px;
-}
-
-.about-us .container .text-content {
-    flex: 1;
-}
-
-.about-us .container p {
-    margin-right: 150px;
-    font-size: 25px;
+.inner-section .text {
+    font-size: 20px;
+    color: var(--text-color);
+    line-height: 30px;
     text-align: justify;
     margin-bottom: 40px;
 }
 
-.about-us .container img {
-    width: 400px;
-    height: auto;
-    flex-shrink: 0;
+.contact-us-abt button {
+    font-family: "Montserrat", serif;
+    background: #303030;
+    color: #fff;
+    border: none;
+    width: 150px;
+    height: 5vh;
+    margin-top: 20px;
+    transition: all 0.5s ease;
+    border-radius: 20px;
+}
+
+.contact-us-abt button:hover {
+    background: #fff;
+    color: #303030;
+    box-shadow: 0px 0px 50px #cea66f, 0px 0px 100px #cea66f;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    border: 1px solid #212526;
+    scale: 110%;
 }
 
 /* ---------- Team Section Styles ---------- */
@@ -333,7 +338,7 @@ header .navbar ul li a:hover::before {
 }
 
 /* ---------- Contact Area Styles ---------- */
-.contact-us  {
+.contact-us {
     font-family: "Poppins", sans-serif;
     background-color: #fff;
     padding: 70px 0;
@@ -342,7 +347,7 @@ header .navbar ul li a:hover::before {
 }
 
 .contact-us .container {
-    
+
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
@@ -497,6 +502,7 @@ header .navbar ul li a:hover::before {
 }
 
 @media (max-width: 480px) {
+
     .contact-form input,
     .contact-form textarea {
         padding: 10px;
@@ -504,6 +510,12 @@ header .navbar ul li a:hover::before {
 
     .contact-us .main-title h2 {
         font-size: 1.8em;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .inner-section {
+        padding: 80px;
     }
 }
 
@@ -546,6 +558,38 @@ header .navbar ul li a:hover::before {
 
     header #nav_check:checked~nav {
         left: 0;
+    }
+
+    .about-us {
+
+        background: none;
+        padding: 100px 40px;
+    }
+
+    .inner-section {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .about-us {
+        padding: 0;
+    }
+
+    .inner-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 60px;
+    }
+
+    .contact-us-abt button {
+        font-size: 19px;
+        padding: 5px;
+        width: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 
@@ -609,9 +653,5 @@ header .navbar ul li a:hover::before {
     .hero .text button {
         width: 100px;
         height: 40px;
-    }
-
-    .acerca_de .container {
-        padding: 50px 10%;
     }
 }
