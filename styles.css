@@ -131,6 +131,15 @@ header .navbar ul li a:hover::before {
     color: #b89360;
 }
 
+.hero .text span {
+    color: #b89360;
+    font-size: 50px;
+}
+
+.hero .text p {
+    padding: 25px 0  25px 0;
+}
+
 .hero .text button {
     font-family: "Montserrat", serif;
     background: none;
@@ -636,7 +645,7 @@ header .navbar ul li a:hover::before {
 
     .hero {
         flex-direction: column;
-        margin: 50px auto;
+        margin: 150px auto;
         width: 90%;
     }
 
@@ -651,7 +660,8 @@ header .navbar ul li a:hover::before {
     }
 
     .hero .text button {
-        width: 100px;
-        height: 40px;
+        font-size: 15px;
+        width: 180px;
+        height: 80px;
     }
 }
