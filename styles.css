@@ -199,10 +199,11 @@ header .navbar ul li a:hover::before {
     color: #fff;
     border: none;
     width: 150px;
-    height: 5vh;
+    height: 8vh;
     margin-top: 20px;
     transition: all 0.5s ease;
     border-radius: 20px;
+    font-size: 18px;
 }
 
 .contact-us-abt button:hover {
@@ -728,19 +729,14 @@ header .navbar ul li a:hover::before {
     }
 
     .inner-section {
-        display: flex;
-        justify-content: center;
-        align-items: center;
         padding: 60px;
     }
 
     .contact-us-abt button {
         font-size: 19px;
         padding: 5px;
-        width: 16px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        width: 150px;
+        height: 80px;
     }
 }
 
