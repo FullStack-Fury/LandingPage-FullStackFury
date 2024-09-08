@@ -596,10 +596,12 @@ header .navbar ul li a:hover::before {
 
 #arrow-prev {
     left: 20px;
+    z-index: 5;
 }
 
 #arrow-next {
     right: 20px;
+    z-index: 5;
 }
 
 .arrow:hover {
