@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GemZ - Gestión para Joyerías</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="/assets/logo2.png">
+    <link rel="icon" href="./assets/logo2.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
@@ -15,17 +15,32 @@
     <!-- ----------HEADER---------- -->
     <header class="header">
         <div class="logo">
-            <img src="/assets/logo2.png" alt="logo">
+            <img src="./assets/logo2_gray.png" alt="logo">
         </div>
-        <input type="checkbox" name="" id="nav_check" hidden>
+
+        <input type="checkbox" id="nav_check" hidden>
+
         <nav class="navbar">
             <ul>
-                <li><a href="#" id="">Inicio</a></li>
-                <li><a href="#acerca_de">Acerca de nosotros</a></li>
-                <li><a href="">Planes</a></li>
-                <li><a class="mi_cuenta" href=""><i class='bx bx-user' style='color:#747774'></i>Mi Cuenta</a></li>
+                <div class="logo">
+                    <img src="./assets/logo2.png" alt="logo">
+                </div>
+                <li><a href="#" id="">Home</a></li>
+                <li><a href="#about-us">About us</a></li>
+                <li><a href="">Subscriptions</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href=""><i class='bx bx-user'></i>My Account</a></li>
             </ul>
+
         </nav>
+
+        <label for="nav_check" class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </label>
+
     </header>
     <!------------------------------->
 
@@ -33,36 +48,29 @@
     <section class="hero" id="hero">
         <img src="./assets/proceso.jpg" alt="">
         <div class="text">
-            <h1>La solución definitiva para joyeros exigentes</h1>
-            <p>Transforma tu negocio con GemZ, el software especializado en gestión de procesos e inventarios para
-                talleres
-                y joyerías.
+            <h1><span>GemZ</span><br>The ultimate solution for demanding jewelers.</h1>
+            <p>Transform your business with GemZ, the specialized software for process and inventory management for
+                workshops and jewelry stores.
             </p>
-            <button>Ver más</button>
+            <button>More Information</button>
         </div>
 
     </section>
 
     <!-- --------------------------- -->
 
-    <!-----------Acerca de  ---------->
+    <!-----------about us  ---------->
 
-    <section class="acerca_de" id="acerca_de">
-        <div class="container">
-            <div class="main-txt">
-                <h2>Acerca de GemZ</h2>
-            </div>
-            <div class="content">
-                <div class="text-content">
-                    <p>GemZ es una solución de software creada por FullStackFury que transforma la gestión de procesos e
-                        inventarios en la industria de la joyería. Diseñado tanto para talleres como para joyerías,
-                        ofrece
-                        control total en cada etapa de producción, desde la adquisición de materiales hasta la entrega
-                        del
-                        producto final.
-                    </p>
-                </div>
-                <img src="./assets/logo2.png" alt="Imagen acerca de GemZ">
+    <section class="about-us" id="about-us">
+        <div class="inner-section">
+            <h1>About Us</h1>
+            <p class="text">GemZ is a software solution created by FullStackFury that transforms process and inventory
+                management in
+                the jewelry industry. Designed for both workshops and jewelry stores, it offers complete control at
+                every stage of production, from the acquisition of materials to the delivery of the final product.
+            </p>
+            <div class="contact-us-abt">
+                <button>Contact Us</button>
             </div>
         </div>
     </section>
@@ -72,14 +80,14 @@
 
     <!-----------TEAM ---------->
 
-    <section class="equipo" id="equipo_sección">
+    <section class="team" id="team">
         <div class="row">
             <h1>Nuestro Equipo de Desarrolladores</h1>
         </div>
 
         <div class="row">
 
-            <!-- 1 -->
+            <!-- Oscar Antayhua -->
             <div class="column">
                 <div class="card">
                     <div class="img">
@@ -96,7 +104,7 @@
                 </div>
             </div>
 
-            <!-- 2 -->
+            <!-- Andres Torres -->
 
             <div class="column">
                 <div class="card">
@@ -114,6 +122,9 @@
                 </div>
             </div>
 
+            <!-- Vicente Quijandria -->
+
+
             <div class="column">
                 <div class="card">
                     <div class="img">
@@ -129,6 +140,8 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Angelo Curi-->
 
             <div class="column">
                 <div class="card">
@@ -146,12 +159,14 @@
                 </div>
             </div>
 
+            <!-- Yasser Renteire-->
+
             <div class="column">
                 <div class="card">
                     <div class="img">
                         <img src="./assets/integrantes/yasser-photo.png" alt="foto_oscar">
                     </div>
-                    <h3>Yasser Renteira</h3>
+                    <h3>Yasser Renteria </h3>
                     <p>Developer</p>
                     <div class="icons">
                         <a href=""><i class="fa-brands fa-twitter"></i></a>
@@ -165,6 +180,247 @@
     </section>
 
     <!-- --------------------------- -->
+
+    <!-- Start Testimonials Area -->
+    <section id="testimonial" class="testimonials section">
+        <div class="container">
+            <div class="section-title">
+                <h3>Customer Testimonials</h3>
+                <h2>Our testimonials</h2>
+                <p>A few words from our collaborators!</p>
+            </div>
+            <!-- Arrows for navigating -->
+            <div class="testimonial-carousel">
+                <button class="arrow" id="arrow-prev">&#10094;</button>
+                <div class="testimonial-wrapper">
+                    <div class="testimonial-slider">
+                        <!-- Testimonial 1 -->
+                        <div class="single-testimonial">
+                            <div class="inner-content">
+                                <div class="quote-icon">“</div>
+                                <div class="text">
+                                    <p>"GemZ ha transformado completamente la manera en que gestionamos nuestro taller.
+                                        La capacidad de seguir el flujo de trabajo desde la adquisición de materiales
+                                        hasta la entrega final es invaluable. Ahora, tenemos un control total sobre el
+                                        inventario y la producción, lo que ha incrementado nuestra eficiencia y reducido
+                                        los errores"</p>
+                                </div>
+                                <div class="author">
+                                    <img src="/assets/testimonials/testimonial-1.png" alt="testimonial-1">
+                                    <h4 class="name">Juan Pérez <span class="deg">owner of jewelry workshop</span></h4>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Testimonial 2 -->
+                        <div class="single-testimonial">
+                            <div class="inner-content">
+                                <div class="quote-icon">“</div>
+                                <div class="text">
+                                    <p>"GemZ ha simplificado enormemente la gestión de nuestro inventario y el
+                                        seguimiento de las ventas. Su interfaz intuitiva y las herramientas de análisis
+                                        nos han permitido optimizar nuestras operaciones y mejorar el servicio al
+                                        cliente. No podríamos estar más satisfechos con la solución que FullStackFury
+                                        nos ha proporcionado."</p>
+                                </div>
+                                <div class="author">
+                                    <img src="/assets/testimonials/testimonial-2.png" alt="testimonial-2">
+                                    <h4 class="name">María López <span class="deg">Jewelry Store Owner</span></h4>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Testimonial 3 -->
+                        <div class="single-testimonial">
+                            <div class="inner-content">
+                                <div class="quote-icon">“</div>
+                                <div class="text">
+                                    <p>"Desde que implementamos GemZ en nuestro taller, hemos visto una mejora
+                                        significativa en la organización y la administración de nuestros procesos. La
+                                        integración entre las distintas etapas de producción nos ha permitido ahorrar
+                                        tiempo y costos, además de brindarnos reportes detallados que facilitan la toma
+                                        de decisiones"</p>
+                                </div>
+                                <div class="author">
+                                    <img src="/assets/testimonials/testimonial-3.png" alt="testimonial-3">
+                                    <h4 class="name">Carlos García <span class="deg">owner of jewelry workshop</span>
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Testimonial 4 -->
+                        <div class="single-testimonial">
+                            <div class="inner-content">
+                                <div class="quote-icon">“</div>
+                                <div class="text">
+                                    <p>"La versatilidad de GemZ es impresionante. Desde la gestión de inventarios hasta
+                                        el seguimiento de pedidos y ventas, todo está integrado de manera eficiente. Ha
+                                        reducido la carga administrativa en nuestra joyería y ha mejorado
+                                        significativamente la precisión y la rapidez en nuestros procesos."</p>
+                                </div>
+                                <div class="author">
+                                    <img src="/assets/testimonials/testimonial-4.png" alt="testimonial-4">
+                                    <h4 class="name">Laura Martínez <span class="deg">Jewelry Store Owner</span></h4>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Testimonial 5 -->
+                        <div class="single-testimonial">
+                            <div class="inner-content">
+                                <div class="quote-icon">“</div>
+                                <div class="text">
+                                    <p>"La implementación de GemZ ha sido un cambio radical para nuestro taller. La
+                                        gestión del inventario y el seguimiento de los pedidos nunca había sido tan
+                                        fácil. Ahora podemos enfocarnos más en la creatividad y menos en la
+                                        administración, lo que ha llevado a un incremento en nuestra productividad y
+                                        satisfacción del cliente"</p>
+                                </div>
+                                <div class="author">
+                                    <img src="/assets/testimonials/testimonial-5.png" alt="testimonial-5">
+                                    <h4 class="name">Ana Rodríguez <span class="deg">owner of jewelry workshop</span>
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Testimonial 6 -->
+                        <div class="single-testimonial">
+                            <div class="inner-content">
+                                <div class="quote-icon">“</div>
+                                <div class="text">
+                                    <p>"Gracias a GemZ, hemos podido optimizar la administración de nuestra tienda de
+                                        joyería de manera efectiva. Las herramientas de reporte y análisis nos han dado
+                                        una visión clara de nuestro rendimiento y nos han ayudado a tomar decisiones
+                                        basadas en datos precisos. Es una inversión que ha valido cada centavo."</p>
+                                </div>
+                                <div class="author">
+                                    <img src="/assets/testimonials/testimonial-6.png" alt="testimonial-6">
+                                    <h4 class="name">Juan Pérez <span class="deg">Jewelry Store Owner</span></h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="arrow" id="arrow-next">&#10095;</button>
+            </div>
+        </div>
+    </section>
+    <!-- End Testimonial Area -->
+
+    <!-- Start Contact Area -->
+    <div id="contact" class="contact-us">
+        <div class="container">
+            <div class="row">
+                <div class="main-title">
+                    <h2>Contact Us</h2>
+                    <p>If you need more information, please do not hesitate to contact us. 😊</p>
+                </div>
+                <div class="col contact-widget-wrapper">
+                    <div class="contact-widget-block">
+                        <h3 class="title">Call us</h3>
+                        <p>+51 0800 4900</p>
+                    </div>
+                    <div class="contact-widget-block">
+                        <h3 class="title">Email us</h3>
+                        <p>fullstack_fury@gmail.com</p>
+                        <p>gemZ@gmail.com</p>
+                    </div>
+                    <div class="contact-widget-block">
+                        <h3 class="title">Our Address</h3>
+                        <p>Av. Alameda San Marcos 11</p>
+                        <p>CHORRILLOS, PERÚ 15067</p>
+                    </div>
+                </div>
+                <div class="col contact-form">
+                    <h3 class="form-title">Leave a message here</h3>
+                    <form class="form" method="post" action="">
+                        <div class="form-group">
+                            <input name="name" type="text" placeholder="Name*" required="required">
+                        </div>
+                        <div class="form-group">
+                            <input name="email" type="email" placeholder="Email*" required="required">
+                        </div>
+                        <div class="form-group">
+                            <input name="subject" type="text" placeholder="Subject*" required="required">
+                        </div>
+                        <div class="form-group">
+                            <input name="phone" type="text" placeholder="Phone*" required="required">
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Message*" name="message" id="message-area"
+                                class="form-control"></textarea>
+                        </div>
+                        <div class="button">
+                            <button type="submit" class="btn">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--------Google maps section--------------->
+
+    <div class="map-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="mapouter">
+                        <div class="gmap_canvas"><iframe id="gmap_canvas"
+                                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15598.975676088388!2d-77.0075971!3d-12.19782!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105b9e0f449b10f%3A0x876705c16ffc17d7!2sUniversidad%20Peruana%20de%20Ciencias%20Aplicadas%20(UPC)!5e0!3m2!1ses!2spe!4v1725318806886!5m2!1ses!2spe">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------------------- -->
+
+
+    <!--------- Footer -------------->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Compañía</h4>
+                    <ul>
+                        <li><a href="#">Acerca de nosotros</a></li>
+                        <li><a href="#">Nuestro equipo</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Recursos</h4>
+                    <ul>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Planes</a></li>
+                        <li><a href="#">Términos de servicio</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Soporte</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Ayuda</a></li>
+                        <li><a href="#">Foro</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Redes Sociales</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- --------------------------- -->
+
+    <script src="/assets/js/slider-testimonials.js"></script>
 </body>
 
 </html>
