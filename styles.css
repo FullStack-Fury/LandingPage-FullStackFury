@@ -463,7 +463,149 @@ header .navbar ul li a:hover::before {
     outline: none;
 }
 
+/* General Section Styling */
+.testimonials {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title h3, .section-title h2, .section-title p {
+    margin-bottom: 20px;
+}
+
+/* Testimonial Carousel */
+.testimonial-carousel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.testimonial-wrapper {
+    overflow: hidden;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.testimonial-slider {
+    display: flex;
+    transition: transform 0.5s ease;
+    gap: 20px;
+}
+
+.single-testimonial {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: calc(50% - 10px); /* Show two testimonials */
+    box-sizing: border-box;
+}
+
+.inner-content {
+    position: relative;
+    padding: 20px;
+}
+
+.quote-icon {
+    font-size: 3em;
+    color: #cea66f;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.text p {
+    font-size: 1em;
+    color: #555;
+    margin-top: 40px;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.author img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+}
+
+.name {
+    font-size: 1.2em;
+    color: #333;
+}
+
+.deg {
+    font-size: 0.9em;
+    color: #777;
+}
+
+/* Arrows */
+.arrow {
+    background-color: #cea66f;  /* Color de fondo */
+    border: none;
+    color: white;               /* Color del ícono */
+    padding: 15px 20px;         /* Tamaño del botón */
+    font-size: 1.5rem;          /* Tamaño del ícono de la flecha */
+    cursor: pointer;
+    border-radius: 50%;         /* Hacer el botón redondo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+#arrow-prev {
+    left: 20px;
+}
+
+#arrow-next {
+    right: 20px;
+}
+
+.arrow:hover {
+    background-color: #b5884a;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+
+
 /*------------- section google maps -----------------*/
+
+@media (max-width: 768px) {
+    .arrow {
+        padding: 10px 15px;    /* Reducir tamaño en dispositivos móviles */
+        font-size: 1.2rem;
+    }
+
+    #arrow-prev {
+        left: 10px;
+    }
+
+    #arrow-next {
+        right: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .single-testimonial {
+        width: calc(100% - 20px); /* Show one testimonial on mobile */
+    }
+}
 
 #gmap_canvas {
     display: relative;
