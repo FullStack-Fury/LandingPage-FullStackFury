@@ -491,7 +491,7 @@ header .navbar ul li a:hover::before {
 
 /* General Section Styling */
 .testimonials {
-    font-family: Arial, sans-serif;
+    font-family: "Montserrat";
     background-color: #f9f9f9;
     padding: 50px 20px;
     text-align: center;
@@ -596,10 +596,12 @@ header .navbar ul li a:hover::before {
 
 #arrow-prev {
     left: 20px;
+    z-index: 5;
 }
 
 #arrow-next {
     right: 20px;
+    z-index: 5;
 }
 
 .arrow:hover {
