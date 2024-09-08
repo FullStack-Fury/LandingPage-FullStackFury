@@ -571,19 +571,18 @@ header .navbar ul li a:hover::before {
 
 /* Arrows */
 .arrow {
-    background-color: #cea66f;  /* Color de fondo */
+    background-color: #cea66f;
     border: none;
-    color: white;               /* Color del ícono */
-    padding: 15px 20px;         /* Tamaño del botón */
-    font-size: 1.5rem;          /* Tamaño del ícono de la flecha */
+    color: white;
+    padding: 15px 20px;
+    font-size: 1.5rem;
     cursor: pointer;
-    border-radius: 50%;         /* Hacer el botón redondo */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    z-index: 10;
 }
 
 #arrow-prev {
