@@ -17,7 +17,7 @@ html {
 :root {
     --bg-color: rgb(201, 196, 196);
     --bg-color2: #e2c872;
-    --text-color: #747774;
+    --text-color: #666866;
 }
 
 /* Estilos generales */
@@ -28,17 +28,21 @@ body {
     color: var(--text-color);
 }
 
+/* ---------- Header Styles ---------- */
 header {
+    font-family: "Montserrat";
     position: fixed;
     top: 0;
     width: 100%;
-    height: 80px;
+    height: 10vh;
     background-color: rgb(255, 255, 255);
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 100px;
     transition: 0.6s;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.3);
+
 }
 
 header .logo {
@@ -46,15 +50,39 @@ header .logo {
     height: 80px;
 }
 
-.navbar ul {
+header .hamburger {
+    display: none;
+    height: fit-content;
+    cursor: pointer;
+    padding: 3px 8px;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+
+header .hamburger:hover {
+    background: #f6f4ff;
+}
+
+header .hamburger div {
+    width: 30px;
+    height: 2px;
+    margin: 6px 0;
+    background: #212526;
+}
+
+header .navbar ul {
     font-family: "Montserrat";
     display: flex;
 }
 
-.navbar ul li a {
+header .navbar ul .logo {
+    display: none;
+}
+
+header .navbar ul li a {
     display: block;
     color: var(--text-color);
-    font-size: 20px;
+    font-size: 15px;
     padding: 10px 25px;
     border-radius: 50px;
     transition: 0.2s;
@@ -62,7 +90,7 @@ header .logo {
     position: relative;
 }
 
-.navbar ul li a::before {
+header .navbar ul li a::before {
     content: "";
     position: absolute;
     bottom: -10px;
@@ -73,10 +101,11 @@ header .logo {
     transition: all 0.5s;
 }
 
-.navbar ul li a:hover::before {
+header .navbar ul li a:hover::before {
     width: 100%;
 }
 
+/* ---------- Hero Section Styles ---------- */
 
 .hero {
     display: flex;
@@ -94,7 +123,7 @@ header .logo {
 }
 
 .hero .text {
-    font-family: "Merriweather", serif;
+    font-family: "Montserrat", serif;
     font-size: 25px;
 }
 
@@ -103,12 +132,13 @@ header .logo {
 }
 
 .hero .text button {
-    font-family: "Merriweather", serif;
+    font-family: "Montserrat", serif;
     background: none;
     width: 150px;
     height: 5vh;
     margin-top: 20px;
     transition: all 0.5s ease;
+    border-radius: 20px;
 }
 
 .hero .text button:hover {
@@ -117,123 +147,331 @@ header .logo {
     box-shadow: 0px 0px 50px #cea66f, 0px 0px 100px #cea66f;
     cursor: pointer;
     transition: all 0.5s ease;
-    transform: translateY(-5px);
+    scale: 110%;
+    border: none;
 }
 
-.acerca_de {
-    font-family: "Merriweather", serif;
-}
+/* ---------- Acerca de Section Styles ---------- */
 
-.acerca_de .container {
-    padding: 90px 15% 120px;
-    background-color: #fad6a3;
-    display: flex;
-    flex-direction: column;
-    /* Title and content stack vertically */
-    align-items: center;
-}
-
-.acerca_de .container .main-txt {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 35px;
-}
-
-.acerca_de .container h2 {
-    color: #A9885A;
-}
-
-.acerca_de .container .content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    max-width: 1200px;
-    gap: 20px;
-}
-
-.acerca_de .container .text-content {
-    flex: 1;
-}
-
-.acerca_de .container p {
-    margin-right: 150px;
-    font-size: 25px;
-    text-align: justify;
-}
-
-.acerca_de .container img {
-    width: 400px;
-    height: auto;
-    flex-shrink: 0;
-}
-
-.equipo {
+.about-us{
     font-family: "Montserrat";
-    padding: 1em;
-  }
-  .equipo .row {
-    display: flex;
-    flex-wrap: wrap;
+    background: url(./assets/proceso-2.jpeg) no-repeat left;
+    background-size: 45%;
+    background-color: #fefefe;
+    overflow: hidden;
+    padding: 100px 0;
+}
+
+.inner-section{
+    width: 55%;
+    float: right;
+    background-color: #fad6a3;
+    padding: 140px;
+    box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+}
+
+.inner-section h1{
+    margin-bottom: 30px;
+    font-size: 50px;
+    font-weight: 900;
+}
+
+.inner-section .text{
+    font-size: 20px;
+    color: var(--text-color);
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+
+.contact-us-abt button{
+    font-family: "Montserrat", serif;
+    background: #303030;
+    color: #fff;
+    border: none;
+    width: 150px;
+    height: 5vh;
+    margin-top: 20px;
+    transition: all 0.5s ease;
+    border-radius: 20px;
+}
+
+.contact-us-abt button:hover{
+    background: #fff;
+    color: #303030;
+    box-shadow: 0px 0px 50px #cea66f, 0px 0px 100px #cea66f;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    border: 1px solid #212526;
+    scale: 110%;
+}
+
+/* ---------- Team Section Styles ---------- */
+.team {
+    font-family: "Montserrat";
+    padding: 50px 0;
+    background-color: #f5f5f5;
+}
+
+.team .row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
     padding: 2em 1em;
-    text-align: center;
-  }
-  .equipo .row h1 {
+    text-align: space-between;
+}
+
+.team .row h1 {
     font-family: "Merriweather", serif;
-    width: 100%;
     text-align: center;
     justify-content: center;
     font-size: 3.5em;
-  }
-  .equipo .row .column {
-    flex: 0 0 33.33%;
-    max-width: 20%;
-    padding: 0 1em;
-  }
-  .equipo .row .card {
-    box-shadow: 0 0 2.2em rgba(25, 0, 58, 0.15);
-    padding: 3.5em 1em;
-    border-radius: 0.6em;
-    color: #303030;
-    cursor: pointer;
-    margin-bottom: 15px;
-  }
-  .equipo .row .card .img {
-    width: 8em;
-    height: 8em;
-    background-color: #303030;
-    padding: 0.5em;
+}
+
+.team .column {
+    box-sizing: border-box;
+}
+
+.team .card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+}
+
+.team .card .img img {
+    width: 10rem;
+    height: 10rem;
     border-radius: 50%;
-    margin: 0 auto 2em auto;
-  }
-  .equipo .row .card img {
-    width: 100%;
-    border-radius: 50%;
-  }
-  .equipo .row .card h3 {
-    font-weight: 500;
-  }
-  .equipo .row .card p {
-    font-weight: 300;
-    text-transform: uppercase;
-    margin: 0.5em 0 2em 0;
-    letter-spacing: 2px;
-  }
-  .equipo .row .card .icons {
-    width: 50%;
-    min-width: 180px;
-    margin: auto;
+}
+
+.team .card h3 {
+    margin: 10px 0;
+    font-size: 24px;
+}
+
+.team .card p {
+    color: #777;
+    font-size: 16px;
+}
+
+.team .card .icons a {
+    margin: 0 10px;
+    color: #333;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.team .card .icons a:hover {
+    color: #cea66f;
+}
+
+
+/* ---------- Footer Styles ---------- */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+.footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer .row {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-  }
-  .equipo .row .card a {
-    color: inherit;
-    font-size: 1.4em;
-  }
-  .equipo .row .card:hover {
-    background: #fad6a3;
-    transition: all 0.3s;
-    transform: translateY(-8px);
-    box-shadow: 0 0 2.2em rgba(17, 17, 17, 0.733);
-  }
+}
+
+.footer-col {
+    flex: 1 1 calc(25% - 20px);
+    margin: 10px;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #cea66f;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    color: #bbb;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-col ul li a:hover {
+    color: #fff;
+}
+
+.footer .social-links {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.footer .social-links a {
+    color: #bbb;
+    font-size: 20px;
+    margin-right: 15px;
+    transition: color 0.3s;
+}
+
+.footer .social-links a:hover {
+    color: #cea66f;
+}
+
+@media screen and (max-width: 1200px){
+    .inner-section{
+        padding: 80px;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    header {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    header .hamburger {
+        display: block;
+    }
+
+    header nav {
+        position: absolute;
+        left: -280px;
+        top: 0;
+        z-index: 5;
+        width: 280px;
+        height: 100vh;
+        background-color: #fefefe;
+        transition: 0.2s;
+        box-shadow: 2px 0 20px 0 rgba(0, 0, 0, 0.05);
+    }
+
+    header nav .logo {
+        display: block;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        margin-left: 30px;
+    }
+
+    header nav ul {
+        display: block;
+        padding: 0 20px;
+        margin-top: 50px;
+        flex-direction: column;
+    }
+
+    header #nav_check:checked~nav {
+        left: 0;
+    }
+
+    .about-us{
+
+        background: none;
+        padding: 100px 40px;
+    }
+    
+    .inner-section{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:600px){
+    .about-us{
+        padding: 0;
+    }
+
+    .inner-section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 60px;
+    }
+
+    .skills button{
+        font-size: 19px;
+        padding: 5px;
+        width: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* ---------- Media Queries for Responsiveness ---------- */
+@media (max-width: 768px) {
+    .footer-col {
+        flex: 1 1 100%;
+        text-align: center;
+    }
+
+    .footer .social-links {
+        justify-content: center;
+    }
+}
+
+/* ---------- Media Queries for Responsiveness ---------- */
+
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .navbar ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar ul li a {
+        padding: 10px;
+        margin: 5px 0;
+    }
+
+    .hero {
+        flex-direction: column;
+        margin: 50px auto;
+        width: 90%;
+    }
+
+    .hero img {
+        width: 80vw;
+        margin: 80px 0 20px 0;
+    }
+
+    .hero .text {
+        margin-top: 20px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .hero .text p{
+        margin-top: 20px;
+    }
+
+    .hero .text button {
+        width: 180px;
+        height: 60px;
+    }
+    
+} 
