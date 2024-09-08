@@ -131,14 +131,24 @@ header .navbar ul li a:hover::before {
     color: #b89360;
 }
 
+.hero .text span {
+    color: #b89360;
+    font-size: 50px;
+}
+
+.hero .text p {
+    padding: 25px 0  25px 0;
+}
+
 .hero .text button {
     font-family: "Montserrat", serif;
     background: none;
     width: 150px;
-    height: 5vh;
+    height: 8vh;
     margin-top: 20px;
     transition: all 0.5s ease;
     border-radius: 20px;
+    font-size: 18px;
 }
 
 .hero .text button:hover {
@@ -190,10 +200,11 @@ header .navbar ul li a:hover::before {
     color: #fff;
     border: none;
     width: 150px;
-    height: 5vh;
+    height: 8vh;
     margin-top: 20px;
     transition: all 0.5s ease;
     border-radius: 20px;
+    font-size: 18px;
 }
 
 .contact-us-abt button:hover {
@@ -719,19 +730,14 @@ header .navbar ul li a:hover::before {
     }
 
     .inner-section {
-        display: flex;
-        justify-content: center;
-        align-items: center;
         padding: 60px;
     }
 
     .contact-us-abt button {
         font-size: 19px;
         padding: 5px;
-        width: 16px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        width: 150px;
+        height: 80px;
     }
 }
 
@@ -778,7 +784,7 @@ header .navbar ul li a:hover::before {
 
     .hero {
         flex-direction: column;
-        margin: 50px auto;
+        margin: 150px auto;
         width: 90%;
     }
 
@@ -793,7 +799,8 @@ header .navbar ul li a:hover::before {
     }
 
     .hero .text button {
-        width: 100px;
-        height: 40px;
+        font-size: 15px;
+        width: 180px;
+        height: 80px;
     }
 }
