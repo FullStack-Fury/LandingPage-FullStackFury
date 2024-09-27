@@ -757,6 +757,32 @@ header .navbar ul li a:hover::before {
 
 /*------------- section google maps -----------------*/
 
+.language-switcher {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-left: 20px;
+}
+
+.lang-btn {
+    padding: 5px 15px;
+    border: 1px solid #b89360;
+    border-radius: 20px;
+    background-color: transparent;
+    cursor: pointer;
+    font-family: "Montserrat";
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.lang-btn:hover {
+    background-color: #b89360;
+    color: #fff;
+}
+
+
+
 @media (max-width: 1024px) {
     .contact-widget-block {
         flex: 1 1 48%;
@@ -957,3 +983,4 @@ header .navbar ul li a:hover::before {
         height: 80px;
     }
 }
+
