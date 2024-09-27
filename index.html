@@ -25,13 +25,16 @@
                 <div class="logo">
                     <img src="./assets/logo2.png" alt="logo">
                 </div>
-                <li><a href="#" id="">Home</a></li>
-                <li><a href="#about-us">About us</a></li>
-                <li><a href="#pricing">Subscriptions</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href=""><i class='bx bx-user'></i>My Account</a></li>
+                <li><a href="#" id="home-link">Home</a></li>
+                <li><a href="#about-us" id="about-link">About us</a></li>
+                <li><a href="#pricing" id="subscriptions-link">Subscriptions</a></li>
+                <li><a href="#contact" id="contact-link">Contact</a></li>
+                <li><a href=""><i class='bx bx-user'></i><span id="account-link">My Account</span></a></li>
+                <div class="language-switcher"></div>
+                <button id="btn-en" class="lang-btn">EN</button>
+                <button id="btn-es" class="lang-btn">ES</button>
+            </div>
             </ul>
-
         </nav>
 
         <label for="nav_check" class="hamburger">
@@ -47,11 +50,9 @@
     <section class="hero" id="hero">
         <img src="./assets/proceso.jpg" alt="">
         <div class="text">
-            <h1><span>GemZ</span><br>The ultimate solution for demanding jewelers.</h1>
-            <p>Transform your business with GemZ, the specialized software for process and inventory management for
-                workshops and jewelry stores.
-            </p>
-            <button>More Information</button>
+            <h1><span>GemZ</span><br><span id="hero-heading">The ultimate solution for demanding jewelers.</span></h1>
+            <p id="hero-description">Transform your business with GemZ, the specialized software for process and inventory management for workshops and jewelry stores.</p>
+            <button id="more-info-btn">More Information</button>
         </div>
 
     </section>
@@ -62,14 +63,13 @@
 
     <section class="about-us" id="about-us">
         <div class="inner-section">
-            <h1>About Us</h1>
-            <p class="text">GemZ is a software solution created by FullStackFury that transforms process and inventory
-                management in
-                the jewelry industry. Designed for both workshops and jewelry stores, it offers complete control at
+            <h1 id="about-heading">About Us</h1>
+            <p class="text" id="about-description">GemZ is a software solution created by FullStackFury that transforms process and inventory
+                management in the jewelry industry. Designed for both workshops and jewelry stores, it offers complete control at
                 every stage of production, from the acquisition of materials to the delivery of the final product.
             </p>
             <div class="contact-us-abt">
-                <a href="#contact"><button>Contact Us</button></a>
+                <a href="#contact"><button id="contact-us-btn">Contact Us</button></a>
             </div>
         </div>
     </section>
@@ -81,7 +81,7 @@
 
     <section class="team" id="team">
         <div class="row">
-            <h1>Our Development Team</h1>
+            <h1 id="team-heading">Our Development Team</h1>
         </div>
 
         <div class="row">
@@ -185,10 +185,9 @@
             <div class="row">
                 <div class="col-12">
                     <div class="section-title">
-                        <h1>Prices</h1>
-                        <h2>Subscription Plans</h2>
-                        <p>Choose the right plan for your type of business and take advantage of the benefits offered by
-                            GemZ.</p>
+                        <h1 id="pricing-heading">Prices</h1>
+                        <h2 id="pricing-subheading">Subscription Plans</h2>
+                        <p id="pricing-description">Choose the right plan for your type of business and take advantage of the benefits offered by GemZ.</p>
                     </div>
                 </div>
             </div>
@@ -196,58 +195,52 @@
                 <!-- Plan para Dueño de Joyería -->
                 <div class="single-table">
                     <div class="table-head">
-
-                        <h4 class="title">Jewelry Workshop Owner Subscription</h4>
-                        <p class="sub-title">Control and improve your production</p>
+                        <h4 id="jewelry-workshop-heading" class="title">Jewelry Workshop Owner Subscription</h4>
+                        <p id="jewelry-workshop-subheading" class="sub-title">Control and improve your production</p>
                         <div class="price">
-                            <h2 class="amount"><span class="currency">$</span>29<span class="duration">/mes</span></h2>
+                            <h2 class="amount"><span id="jewelry-workshop-price">$29</span><span id="jewelry-workshop-duration">/mes</span></h2>
                         </div>
                     </div>
                     <div class="table-content">
                         <ul class="table-list">
-                            <li>Stage-by-Stage Production Tracking</li>
-                            <li>Production Performance Report</li>
-                            <li>Quality Control</li>
-                            <li>Resource Optimization</li>
-                            <li>Production Efficiency</li>
-                            <li>Scalability</li>
-
-
+                            <li id="jewelry-workshop-feature1">Stage-by-Stage Production Tracking</li>
+                            <li id="jewelry-workshop-feature2">Production Performance Report</li>
+                            <li id="jewelry-workshop-feature3">Quality Control</li>
+                            <li id="jewelry-workshop-feature4">Resource Optimization</li>
+                            <li id="jewelry-workshop-feature5">Production Efficiency</li>
+                            <li id="jewelry-workshop-feature6">Scalability</li>
                         </ul>
                     </div>
                     <div class="button">
-                        <a href="javascript:void(0)" class="btn">Start your free trial<i
-                                class="lni lni-arrow-right"></i></a>
+                        <a href="javascript:void(0)" class="btn" id="jewelry-workshop-btn">Start your free trial</a>
                     </div>
-                    <p class="no-card">No credit card required</p>
+                    <p class="no-card" id="no-card-jewelry-workshop">No credit card required</p>
                 </div>
 
                 <!-- Plan para Dueño de Taller de Joyería -->
                 <div class="single-table middle">
                     <span class="popular">Most Popular</span>
                     <div class="table-head">
-                        <h4 class="title">Jewelry Store Owner Subscription</h4>
-                        <p class="sub-title">Optimize the management of your jewelry store</p>
+                        <h4 id="jewelry-store-heading" class="title">Jewelry Store Owner Subscription</h4>
+                        <p id="jewelry-store-subheading" class="sub-title">Optimize the management of your jewelry store</p>
                         <div class="price">
-                            <h2 class="amount"><span class="currency">$</span>49<span class="duration">/month</span>
-                            </h2>
+                            <h2 class="amount"><span id="jewelry-store-price">$49</span><span id="jewelry-store-duration">/month</span></h2>
                         </div>
                     </div>
                     <div class="table-content">
                         <ul class="table-list">
-                            <li>Custom Order Management</li>
-                            <li>Final Product Quality Record</li>
-                            <li>Inventory Optimization</li>
-                            <li>Automatic Alerts</li>
-                            <li>Seamless Integration</li>
-                            <li>Sales Analysis</li>
+                            <li id="jewelry-store-feature1">Custom Order Management</li>
+                            <li id="jewelry-store-feature2">Final Product Quality Record</li>
+                            <li id="jewelry-store-feature3">Inventory Optimization</li>
+                            <li id="jewelry-store-feature4">Automatic Alerts</li>
+                            <li id="jewelry-store-feature5">Seamless Integration</li>
+                            <li id="jewelry-store-feature6">Sales Analysis</li>
                         </ul>
                     </div>
                     <div class="button">
-                        <a href="javascript:void(0)" class="btn btn-alt">Start your free trial <i
-                                class="lni lni-arrow-right"></i></a>
+                        <a href="javascript:void(0)" class="btn" id="jewelry-store-btn">Start your free trial</a>
                     </div>
-                    <p class="no-card">No credit card required</p>
+                    <p class="no-card" id="no-card-jewelry-store">No credit card required</p>
                 </div>
 
             </div>
@@ -259,9 +252,9 @@
     <section id="testimonial" class="testimonials section">
         <div class="container">
             <div class="section-title">
-                <h1>Customer Testimonials</h1>
-                <h2>Our testimonials</h2>
-                <p>A few words from our collaborators!</p>
+            <h1 id="testimonials-heading">Customer Testimonials</h1>
+            <h2 id="testimonials-subheading">Our testimonials</h2>
+            <p id="testimonials-description">A few words from our collaborators!</p>
             </div>
             <!-- Arrows for navigating -->
             <div class="testimonial-carousel">
@@ -383,27 +376,27 @@
         <div class="container">
             <div class="row">
                 <div class="main-title">
-                    <h2>Contact Us</h2>
-                    <p>If you need more information, please do not hesitate to contact us. 😊</p>
+                    <h2 id="contact-heading">Contact Us</h2>
+                    <p id="contact-description">If you need more information, please do not hesitate to contact us. 😊</p>
                 </div>
                 <div class="col contact-widget-wrapper">
                     <div class="contact-widget-block">
-                        <h3 class="title">Call us</h3>
+                        <h3 class="title" id="call-us">CALL US</h3>
                         <p>+51 0800 4900</p>
                     </div>
                     <div class="contact-widget-block">
-                        <h3 class="title">Email us</h3>
+                        <h3 class="title" id="email-us">EMAIL US</h3>
                         <p>fullstack_fury@gmail.com</p>
                         <p>gemZ@gmail.com</p>
                     </div>
                     <div class="contact-widget-block">
-                        <h3 class="title">Our Address</h3>
+                        <h3 class="title" id="address-us">OUR ADDRESS</h3>
                         <p>Av. Alameda San Marcos 11</p>
                         <p>CHORRILLOS, PERÚ 15067</p>
                     </div>
                 </div>
                 <div class="col contact-form">
-                    <h3 class="form-title">Leave a message here</h3>
+                    <h3 class="form-title" id="leave-message">Leave a message here</h3>
                     <form class="form" method="post" action="">
                         <div class="form-group">
                             <input name="name" type="text" placeholder="Name*" required="required">
@@ -422,7 +415,7 @@
                                 class="form-control"></textarea>
                         </div>
                         <div class="button">
-                            <button type="submit" class="btn">Send Message</button>
+                            <button type="submit" class="btn" id="send-message-btn">Send Message</button>
                         </div>
                     </form>
                 </div>
@@ -456,7 +449,7 @@
         <div class="container">
             <div class="row">
                 <div class="footer-col">
-                    <h4>Company</h4>
+                    <h4 id="footer-company">Company</h4>
                     <ul>
                         <li><a href="#about-us">About us</a></li>
                         <li><a href="#team">Our Team</a></li>
@@ -464,7 +457,7 @@
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4>Resources</h4>
+                    <h4 id="footer-resources">Resources</h4>
                     <ul>
                         <li><a href="#">Blog</a></li>
                         <li><a href="#">Payment plans</a></li>
@@ -472,7 +465,7 @@
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4>Support</h4>
+                    <h4 id="footer-support">Support</h4>
                     <ul>
                         <li><a href="#">FAQ</a></li>
                         <li><a href="#">Help</a></li>
@@ -480,7 +473,7 @@
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4>Social Networks</h4>
+                    <h4 id="footer-social">Social Networks</h4>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
@@ -495,6 +488,7 @@
     <!-- --------------------------- -->
 
     <script src="/assets/js/slider-testimonials.js"></script>
+    <script src="/assets/js/script.js"></script>
 </body>
 
 </html>
